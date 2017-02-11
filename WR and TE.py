@@ -34,5 +34,6 @@ with open ('WRTEStats.csv','wb') as csvfile:
                 Year = year
                 record = (Year, Rank,Player, School, Conference, Games, Receptions, Receiving_Yards, Avg_Receiving_Yards, Receiving_TDs,Rush_Attempts, Rush_Yards, Avg_Rush_Yards,Rushing_TDs, Scrim_Plays, Scrim_Yards, Avg_Scrim_Yards,Scrim_TDs)
                 wrtr.writerow(record)
+                csvfile.flush()
             except:
                 pass

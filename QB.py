@@ -23,7 +23,7 @@ with open ('QBcollegeStats.csv','wb') as csvfile:
                 Pass_Attempts = col[5].string
                 Pass_Yards = col[6].string
                 Yards_per_Attempt = col[7].string
-                Avg_Yards_per_Attempt = col[8].string
+                Avg_YPA = col[8].string
                 Passing_TDs = col[9].string
                 Interceptions = col[10].string
                 Rating = col[11].string
@@ -32,7 +32,7 @@ with open ('QBcollegeStats.csv','wb') as csvfile:
                 Avg_Rush_Yards = col[14].string
                 Rushing_TDs = col[15].string
                 Year = year
-                record = (Year, Rank,Player, School, Conference, Games, Completions, Pass_Attempts, Yards_per_Attempt,Avg_Yards_per_Attempt,Passing_TDs, Interceptions, Rating, Rush_Attempts, Rush_Yards, Avg_Rush_Yards, Rushing_TDs)
+                record = (Year, Rank,Player, School, Conference, Games, Completions, Pass_Attempts, Yards_per_Attempt,Avg_YPA,Passing_TDs, Interceptions, Rating, Rush_Attempts, Rush_Yards, Avg_Rush_Yards, Rushing_TDs)
                 wrtr.writerow(record)
                 csvfile.flush()
             except:
